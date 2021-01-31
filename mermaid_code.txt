@@ -1,0 +1,25 @@
+```mermaid
+
+graph LR;
+
+Input[Input] --> DB[(Database buffer)]
+
+subgraph host
+
+subgraph API
+
+DB --> Algo[Algorithmes]
+
+subgraph Container
+
+Algo
+
+end
+
+end 
+
+end
+
+Algo --> Output[Output]
+
+```
